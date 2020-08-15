@@ -1,0 +1,5 @@
+# Node.js files
+package-lock.json
+node_modules
+# Compiled CSS files
+dist/
