@@ -4,7 +4,7 @@
   "description": "A monorepo for all of my userstyles.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node scripts/build.js"
   },
   "repository": {
     "type": "git",
