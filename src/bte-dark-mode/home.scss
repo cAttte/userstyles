@@ -1,0 +1,59 @@
+/* title */
+.home-scroll span {
+	color: $almost-black;
+    cursor: default;
+}
+	/* background image */
+	.home-scroll {
+		background-color: $light;
+	}
+	/* description */
+	.home-scroll .home-scroll-text {
+		cursor: text;
+	}
+    /* "Read more" button down arrow */
+    .home-scroll .button .fa-chevron-down {
+        padding-left: 10px
+    }
+
+/* content */
+#wrapper, #content, .content-container {
+	background-color: $almost-black;
+    color: $light;
+}
+	/* showcase */
+	.showcase-container {
+		background-color: $almost-black;
+	}
+		/* builder tags */
+		.build-builder {
+			color: $grayple;
+		}
+		/* spacing above scrollbar */
+		.showcase-build, .build-builder {
+			padding-bottom: 20px;
+		}
+		/* spacing below scrollbar */
+		.showcase-more {
+			padding-top: 20px;
+		}
+
+	/* cards */
+	.card-info {
+		background-color: $dark;
+    }
+		/* titles */
+		.card-title {
+			cursor: default;
+		}
+		/* buttons */
+		.card-actions > a {
+			background-color: $gray;
+        	color: $light;
+		}
+            /* hover */
+			.card-actions > a:hover {
+				background-color: $gray;
+				color: white;
+				transition: 150ms;
+            }

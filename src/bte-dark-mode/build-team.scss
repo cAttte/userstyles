@@ -1,0 +1,38 @@
+/* "Leave" button */
+[style*="background: #f9f9f9"] > a.button {
+    background-color: rgb(192, 32, 32) !important;
+}
+/* hover */
+[style*="background: #f9f9f9"] > a.button:hover {
+    background-color:rgb(207, 39, 39) !important;
+    transition: 150ms;
+}
+/* container */
+[style*="background: #f9f9f9"] {
+    background-color: $almost-black !important;
+}
+/* member list */
+    /* head */
+    h2 + table.table > thead > tr {
+        color: white;
+        background-color: $dark;
+    }
+    /* every other member */
+    h2 + table.table > tbody > tr:nth-child(even) {
+        background-color: $dark;
+    }
+    /* hovered name */
+    h2 + table.table > tbody > tr > td:nth-of-type(2):hover {
+        color: white;
+        transition: 150ms;
+    }
+    /* role */
+    h2 + table.table > tbody > tr > td:nth-of-type(3) {
+        color: $grayple;
+        cursor: default;
+    }
+        /* hover */
+        h2 + table.table > tbody > tr > td:nth-of-type(3):hover {
+            color: $blurple;
+            transition: 150ms;
+        }

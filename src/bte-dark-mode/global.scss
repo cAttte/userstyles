@@ -1,0 +1,134 @@
+// global
+body {
+    background-color: $almost-black;
+    color: $light;
+}
+    // scrollbar
+    ::-webkit-scrollbar {
+        background-color: $dark;
+        height: 15px;
+        width: 15px;
+        border-radius: 15px;
+    }
+        // thumb
+        ::-webkit-scrollbar-thumb {
+            background-color: $gray;
+            border-radius: 15px;
+        }
+	// buttons
+	.home-scroll .button, #content .button {
+        background-color: $dark;
+		color: $light;
+    }
+		// hover
+		.home-scroll .button:hover, #content .button:hover {
+        	background-color: $dark;
+			color: white;
+			transition: 150ms;
+    	}
+	// explanations
+	abbr {
+		cursor: help;
+	}
+	// inputs
+	input, [id^=row_apply_] > [id^=apply_], #map_latitude, #map_longitude, #search_search, .form .form-input {
+		background-color: $gray;
+    	border-color: $gray;
+    	border-radius: 10px;
+    	color: $light;
+	}
+	// inline code
+	code, kbd, #map_tpll_command {
+    	background-color: $dark;
+    	padding: 5px;
+	}
+	// selections
+	::selection {
+        background-color: $grayple;
+    }
+    // links
+	#content :not(.card-actions) > a:not([class]) {
+    	color: $grayple;
+    }
+    	// white (button) links
+        a:hover {
+            text-decoration: none !important;
+            color: white;
+            transition: 150ms;
+        }
+        // hover
+        #content :not(.card-actions) > a:not([class]):hover {
+			color: $blurple;
+			transition: 150ms;
+        }
+
+// header
+#topbar {
+	background-color: $dark;
+    color: $light;
+}
+	// logo
+	#topbar .logo-link img {
+        -webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	// buttons
+	#topbar .menu-link {
+		background-color: $dark;
+	}
+		// hover
+		#topbar .menu-link:hover {
+			background-color: $gray;
+			color: white;
+			transition: 150ms;
+		}
+	// login / user button
+    #topbar .menu-link.menu-login,
+	#topbar .menu-link.menu-user,
+	#topbar .menu-dropdown {
+		background-color: $gray;
+    }
+		// dropdown
+		#topbar .menu-dropdown-links > .menu-link {
+			background-color: $dark;
+			padding: 20px;
+		}
+			// hover
+            #topbar .menu-dropdown-links > .menu-link:hover {
+                background-color: $gray;
+                transition: 150ms;
+            }
+			// discord tag
+			#topbar .menu-dropdown-links > .menu-link:first-of-type {
+				color: $grayple;
+            }
+                // hover
+                #topbar .menu-dropdown-links > .menu-link:first-of-type:hover {
+					color: $blurple;
+					transition: 150ms;
+				}
+		// mobile hamburger button
+		#topbar #menu-mobile-button {
+			background-color: $dark;
+			background-image: url(https://i.imgur.com/FgVxY11.png)
+		}
+// footer
+#footer {
+	background-color: $dark;
+    color: $light;
+}
+	// credits
+	#footer .footer-development {
+		color: $grayple;
+        cursor: default;
+    }
+	#footer .footer-development:after {
+		content: " │ Theme by cAtte_";
+    }
+        // hover
+        #footer .footer-development:hover {
+            color: $blurple;
+            transition: 150ms;
+        }
