@@ -1,23 +1,31 @@
 const fs = require("fs")
 const chalk = require("chalk")
 const sass = require("node-sass")
+const render = require("util").promisify(sass.render)
 const userCSS = require("usercss-meta")
 
-const STYLE = process.argv[2]
-if (!fs.existsSync(`./styles/${STYLE}/style.scss`))
-    process.exit(console.log(chalk.red(`Error: "styles/${STYLE}/style.scss" does not exist.`)))
+async function build(style) {
+    if (!fs.existsSync(`./styles/${style}/style.scss`))
+        console.log(chalk.red(`Error: "styles/${style}/style.scss" does not exist.`))
 
-sass.render({ file: `./styles/${STYLE}/style.scss`, outputStyle: "compressed" }, (err, result) => {
-    if (err)
-        process.exit(console.log(chalk.red(err.formatted)))
-    if (!fs.existsSync(`./styles/${STYLE}/dist/`))
-        fs.mkdirSync(`./styles/${STYLE}/dist/`)
+    let error = null
+    const result = await render({
+        file: `./styles/${style}/style.scss`,
+        outputStyle: "compressed"
+    }).catch(err => error = err)
+    if (error) return console.log(chalk.red(error.formatted))
 
-    const defaultData = JSON.parse(fs.readFileSync("./styles/defaults.json"))
-    const styleData = JSON.parse(fs.readFileSync(`./styles/${STYLE}/style.json`))
-    const data = { ...defaultData, ...styleData }
-    const meta = userCSS.stringify(data, { alignKeys: true })
-    fs.writeFileSync(`./styles/${STYLE}/dist/${STYLE}.min.css`, `${meta}\n\n${result.css}`)
+    if (!fs.existsSync(`./styles/${style}/dist/`))
+        fs.mkdirSync(`./styles/${style}/dist/`)
 
-    console.log(chalk.green(`Compiled ${STYLE}.`))
-})
+    const data = userCSS.stringify({
+        ...JSON.parse(fs.readFileSync("./styles/defaults.json")),
+        ...JSON.parse(fs.readFileSync(`./styles/${style}/style.json`))
+    }, { alignKeys: true })
+    fs.writeFileSync(`./styles/${style}/dist/${style}.min.css`, `${data}\n\n${result.css}`)
+
+    console.log(chalk.green(`Compiled ${style}.`))
+}
+
+build(process.argv[2])
+module.exports = build
