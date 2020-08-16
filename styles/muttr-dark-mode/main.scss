@@ -1,42 +1,47 @@
-/* input */
+// input
 #timelineForm > .content {
     background-color: $carbon-black;
 }
-    /* border */
+    // border
     #timelineForm > .content {
         border-color: $darkest-blue;
     }
-        /* hover */
+        // hover
         #timelineForm > .content:hover {
             border-color: $darker-blue;
             transition: 250ms;
         }
-/* post stream */
+// post stream
 .streamPostsContainer {
     background-color: $carbon-black;
 }
-    /* post */
+    // post
     .post-item {
         background-color: $carbon-black;
         border-color: $darkest-gray;
     }
-        /* hover */
+        // hover
         .post-item:hover {
             background-color: $darkest-gray;
             transition: 250ms;
         }
-    /* content */
+    // content
     .post-text {
         color: $light-gray !important;
     }
-    /* details */
-    .post-item .avatar-name, /* author */
-    .post-item .says, /* "says" */
-    .post-item .post-category, /* category */
-    .post-item .fa-ellipsis-v, /* options button */
-    .post-item .fa-clock-o, /* clock icon */
-    .post-item .time-string, /* post age */
-    .post-item .fa-comments-o, /* comments icon */
-    .post-item .count { /* comment count */
+    // details
+    .post-item .avatar-name, // author
+    .post-item .says, // "says"
+    .post-item .post-category, // category
+    .post-item .fa-ellipsis-v, // options button
+    .post-item .fa-clock-o, // clock icon
+    .post-item .time-string, // post age
+    .post-item .fa-comments-o, // comments icon
+    .post-item .count { // comment count
         color: $light-blue;
     }
+        // read more button
+        .read-more {
+            background-color: $light-blue;
+            color: $carbon-black;
+        }
