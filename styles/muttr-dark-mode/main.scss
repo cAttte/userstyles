@@ -1,0 +1,41 @@
+/* input */
+#timelineForm > .content {
+    background-color: var(--carbon-black);
+}
+    /* border */
+    #timelineForm > .content {
+        border-color: var(--darkest-blue);
+    }
+        /* hover */
+        #timelineForm > .content:hover {
+            border-color: var(--darker-blue);
+            transition: 250ms;
+        }
+/* post stream */
+.streamPostsContainer {
+    background-color: var(--carbon-black);
+}
+    /* post */
+    .post-item {
+        border-color: var(--darkest-gray);
+    }
+        /* hover */
+        .post-item:hover {
+            background-color: var(--darker-gray);
+            transition: 250ms;
+        }
+    /* content */
+    .post-text {
+        color: var(--light-gray) !important;
+    }
+    /* details */
+    .post-item .avatar-name, /* author */
+    .post-item .says, /* "says" */
+    .post-item .post-category, /* category */
+    .post-item .fa-ellipsis-v, /* options button */
+    .post-item .fa-clock-o, /* clock icon */
+    .post-item .time-string, /* post age */
+    .post-item .fa-comments-o, /* comments icon */
+    .post-item .count { /* comment count */
+        color: var(--light-blue);
+    }

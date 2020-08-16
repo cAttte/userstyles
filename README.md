@@ -1,5 +1,4 @@
 # userstyles
-
 A monorepo for all of my userstyles.
 
 # Styles
@@ -7,3 +6,5 @@ A monorepo for all of my userstyles.
 - **[bte-dark-mode](https://github.com/cAttte/userstyles/tree/master/styles/bte-dark-mode#readme):**
 A dark mode userstyle for the official Build The Earth website.  
 *No longer mantained, as it's been officially implemented.*
+- **[muttr-dark-mode](https://github.com/cAttte/userstyles/tree/master/styles/muttr-dark-mode#readme):**
+A dark mode userstyle for Muttr.  

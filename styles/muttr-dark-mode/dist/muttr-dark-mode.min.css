@@ -1,0 +1,12 @@
+/* ==UserStyle==
+@namespace   cAtte_
+@author      cAtte_ (https://github.com/cAttte)
+@homepageURL https://github.com/cAttte/userstyles
+@supportURL  https://github.com/cAttte/userstyles/issues
+@license     MIT
+@name        muttr-dark-mode
+@version     1.0.0
+@description A dark mode userstyle for Muttr.
+==/UserStyle== */
+
+#content{background-color:var(--darker-gray)}#timelineForm>.content{background-color:var(--carbon-black)}#timelineForm>.content{border-color:var(--darkest-blue)}#timelineForm>.content:hover{border-color:var(--darker-blue);transition:250ms}.streamPostsContainer{background-color:var(--carbon-black)}.post-item{border-color:var(--darkest-gray)}.post-item:hover{background-color:var(--darker-gray);transition:250ms}.post-text{color:var(--light-gray) !important}.post-item .avatar-name,.post-item .says,.post-item .post-category,.post-item .fa-ellipsis-v,.post-item .fa-clock-o,.post-item .time-string,.post-item .fa-comments-o,.post-item .count{color:var(--light-blue)}
