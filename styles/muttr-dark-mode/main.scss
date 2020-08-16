@@ -17,11 +17,12 @@
 }
     /* post */
     .post-item {
+        background-color: $carbon-black;
         border-color: $darkest-gray;
     }
         /* hover */
         .post-item:hover {
-            background-color: $darker-gray;
+            background-color: $darkest-gray;
             transition: 250ms;
         }
     /* content */
