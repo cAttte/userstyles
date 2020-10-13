@@ -1,57 +1,57 @@
-/* title */
+// title
 .home-scroll span {
 	color: $almost-black;
     cursor: default;
 }
-	/* background image */
+	// background image
 	.home-scroll {
 		background-color: $light;
 	}
-	/* description */
+	// description
 	.home-scroll .home-scroll-text {
 		cursor: text;
 	}
-    /* "Read more" button down arrow */
+    // "Read more" button down arrow
     .home-scroll .button .fa-chevron-down {
         padding-left: 10px
     }
 
-/* content */
+// content
 #wrapper, #content, .content-container {
 	background-color: $almost-black;
     color: $light;
 }
-	/* showcase */
+	// showcase
 	.showcase-container {
 		background-color: $almost-black;
 	}
-		/* builder tags */
+		// builder tags
 		.build-builder {
 			color: $grayple;
 		}
-		/* spacing above scrollbar */
+		// spacing above scrollbar
 		.showcase-build, .build-builder {
 			padding-bottom: 20px;
 		}
-		/* spacing below scrollbar */
+		// spacing below scrollbar
 		.showcase-more {
 			padding-top: 20px;
 		}
 
-	/* cards */
+	// cards
 	.card-info {
 		background-color: $dark;
     }
-		/* titles */
+		// titles
 		.card-title {
 			cursor: default;
 		}
-		/* buttons */
+		// buttons
 		.card-actions > a {
 			background-color: $gray;
         	color: $light;
 		}
-            /* hover */
+            // hover
 			.card-actions > a:hover {
 				background-color: $gray;
 				color: white;

@@ -1,27 +1,27 @@
-/* country filter */
+// country filter
 #search_country {
     background-color: $gray;
     border-color: $gray;
     border-radius: 10px;
     color: $light;
 }
-/* "Submit form" button */
+// "Submit form" button
 .form-actions > button[type=submit] {
     background-color: $gray;
     color: $light;
 }
-    /* hover */
+    // hover
     .form-actions > button[type=submit]:hover {
         cursor: pointer;
         background-color: $gray;
         color: white;
         transition: 150ms;
     }
-/* page buttons */
+// page buttons
 .pagination > a {
     background-color: $gray;
 }
-    /* current */
+    // current
     .pagination > a.current {
         color: $light;
         cursor: default;

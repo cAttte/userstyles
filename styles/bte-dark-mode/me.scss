@@ -1,52 +1,52 @@
-/* discord sign in button */
+// discord sign in button
 .discord-button {
     background-color: $blurple;
 }
-    /* discord logo */
+    // discord logo
     .discord-button > img {
         padding-bottom: 3px;
     }
-/* "Remember me" button */
+// "Remember me" button
 label[for=remember-me] {
     margin-left: 15px;
 }
-/* build team / location cards */
+// build team / location cards
 .card {
     background-color: $dark;
 }
-    /* title */
+    // title
     .card-title {
         font-weight: 700;
     }
-    /* image */
+    // image
     .card-image {
         margin-right: 35px;
     }
-    /* detail values */
+    // detail values
     .card-detail-value {
         color: $grayple;
     }
-        /* hover */
+        // hover
         .card-detail-value:hover {
             color: $blurple;
             transition: 150ms;
         }
-/* "Join a Build Team" button */
+// "Join a Build Team" button
 a[style="background: #7fbd7f"] {
     background-color: #398059 !important;
 }
-    /* hover */
+    // hover
     a[style="background: #7fbd7f"]:hover {
         background-color: #3a9e67 !important;
         transition: 150ms;
     }
-/* "Apply for another location" button */
+// "Apply for another location" button
 p.form > .form-button {
     margin-left: 15px;
     background-color: $dark;
     color: $light;
 }
-    /* hover */
+    // hover
     p.form > .form-button:hover {
         background-color: $dark;
         color: white;
