@@ -17,7 +17,10 @@ async function build(style) {
         file: `./styles/${style}/style.scss`,
         outputStyle: "compressed"
     }).catch(err => (error = err))
-    if (error) return console.log(chalk.red(error.formatted))
+    if (error)
+        return console.log(
+            chalk.red("Error: ") + chalk.redBright(error.formatted.slice(7))
+        )
 
     await fs
         .access(`./styles/${style}/dist/`)
